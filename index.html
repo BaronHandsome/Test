@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/header.css">
+    <link rel="stylesheet" href="styles/css/main-block.css">
+    <link rel="stylesheet" href="styles/css/help-block.css">
+    <!-- <link rel="stylesheet" href="styles/css/benefit-block.css">
+    <link rel="stylesheet" href="styles/css/system-block.css">
+    <link rel="stylesheet" href="styles/css/footer.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="assets/logo.svg" alt="logo">
+        <div class="burger-menu">X</div>
+        <nav class="header_nav">
+            <button class="header_btn btn">get inspired</button>
+            <div class="dropdown">
+                <p onclick="dropDown()" class="dropbtn">Solutions</p>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">Ubiquitous Conncectivity</a>
+                    </div>
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">Predictive Maintenance</a>
+                    </div>
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">Data Curation</a>
+                    </div>
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">Failture Detection</a>
+                    </div>
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">Perfomance Optimization</a>
+                    </div>
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">IIoT Software Applience</a>
+                    </div>
+                    <div class="header_link-container">
+                        <div class="hover-border"></div>
+                        <a class="header_dropdown-link" href="#">Are you ready for IIoT Deployment</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#">Contact Us</a>
+            <a href="#" class="header_contact-link">
+                <img src="assets/Check.svg" alt="">
+            </a>
+        </nav>
+    </header>
+    <div class="main-block">
+        <div class="main-block_get-inspired">get inspired</div>
+        <div class="main-block_info">
+            <h1 class="title">Developing IIoT Edge Software <span>(ViEdge)</span></h1>
+            <p class="main-block_subtitle">
+                Delivering INTEGRATED SOLUTIONS for MISSION-CRITICAL applications within ASSET-INTENSIVE industries
+            </p>
+            <ul class="main-block_abous-us">
+                <li class="li">Ready-made software framework</li>
+                <li class="li">Plug-n-Play implementation</li>
+                <li class="li">Domain expertise and know-how</li>
+            </ul>
+        </div>
+        <div class="main-block_image-container">
+            <img src="assets/finalAsset 2.1.svg" alt="">
+        </div>
+    </div>
+    <div class="help-block">
+        <div class="help-block_prop-block">
+            <h2 class="help-block_subtitle">we help to uplift your IIoT journey!</h2>
+            <img class="help-block_button-prop" src="assets/help-block_Vector.svg" alt="button">
+        </div>
+        <div class="help-block_solution">
+            <div class="help-block_text-container">
+                <h3>The value props you can’t live without...</h3>
+                <p>Click for Solution Primer</p>
+            </div>
+            <img class="help-block_button" src="assets/help-block_button.svg" alt="Button">
+        </div>
+    </div>
+    <!-- <div class="benefits-container">
+        <div class="benefits-block">
+            <div class="benefits-block_border"></div>
+            <h2 class="benefits-block_title">nice to <span>meet you</span></h2>
+            <div class="benefits-block_img-container">
+                <img class="benefits-bg1" src="assets/benefit-orange-bg.png" alt="">
+                <img class="benefits-bg2" src="assets/bentfit-bg.png" alt="">
+            </div>
+            <div class="benefits">
+                <h3>Thanks for the opportunity to introduce Vixtera</h3>
+                <div class="benefits-btn">
+                    <p>get the benefits</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="system-block">
+        <div class="system-block_info">
+            <h2 class="system-block_title">We supercharge IIoT deployment for <span>Industrial Enterprises</span>, <span>manufacturers</span> and <span>vars</span></h2>
+            <ul class="system-block_list">
+                <li class="li">Rapid device on-boarding</li>
+                <li class="li">Instant failture detection</li>
+                <li class="li">Multifaceted event data curation</li>
+                <li class="li">Speedy data insights & decision making</li>
+            </ul>    
+        </div>
+        <div class="system-block_scheme">
+            <img src="assets/scheme.svg" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <img class="footer-bg footer-bg-left" src="assets/footer-img.svg" alt="footer-bg">
+        <img class="footer-bg footer-bg-right" src="assets/footer-img-right.svg" alt="footer-bg">
+        <div class="footer-main">
+            <p class="footer_made-by">Innovation @IIoT Edge</p>
+            <img src="assets/footer-logo.svg" alt="logo">
+            <div class="footer-info">
+                <a class="footer-link" href="#">Contact us</a>
+                <a class="footer-link" href="#">Privacy Policy</a>
+                <a class="footer-link" href="#">Get inspired</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2020 <a href="https://vixtera.com/" class="footer-site-link">Vixtera</a>. All Rights Reserved</p>
+        </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
