@@ -1,0 +1,20 @@
+.status-bar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 0 5%;
+}
+
+.mobile-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+}
+
+@media (max-width: 375px) {
+    .status-bar {
+        display: flex;
+    }
+}

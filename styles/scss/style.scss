@@ -103,7 +103,13 @@ a {
     left: -20px;
 }
 
-.show {display:block;}
+.show {
+    display:block!important;
+}
+
+.show-flex {
+    display:flex!important;
+}
 
 @media (max-width: 1600px) {
     h1 {
