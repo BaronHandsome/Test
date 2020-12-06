@@ -12,6 +12,7 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .footer_made-by {
@@ -52,8 +53,132 @@
 
 .footer-bg-left {
     left: 0;
+    z-index: 1;
 }
 
 .footer-bg-right {
     right: 0;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        height: 316px;
+        position: relative;
+    }
+    
+    .footer-main {
+        margin-top: 20px;
+        width: 500px;
+        flex-direction: column;
+        position: absolute;
+        position: relative;
+        right: 40px;
+        padding-left: 40px;
+    }
+
+    .footer_made-by {
+        width: 300px;
+        font-size: 1em!important;
+    }
+
+    .footer-logo {
+        width: 150px;
+        margin-top: 40px;
+    }
+
+    .footer-info {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        align-items: center;
+        font-size: 1.2rem!important;
+    }
+
+    .footer-bg-left {
+        height: 316px;
+    }
+
+    .footer-bg-right {
+        display: none;
+    }
+
+    .footer-copyright {
+        width: 500px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 0 100px;
+        max-width: 768px;
+    }
+
+    .footer-info {
+        position: absolute;
+        right: 100px;
+        top: 100px;
+    }
+
+    .footer-bg-left {
+        left: -100px;
+    }
+
+    .footer-main {
+        padding: 0;
+        margin-left: 200px;
+        width: 400px;
+    }
+
+    .footer-copyright {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        margin-top: 50px;
+        width: 375px;
+        padding: 0;
+
+        * {
+            max-width: 375px;
+        }
+    }
+
+    .footer-bg-left {
+        left: -220px;
+    }
+
+    .footer-main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 0 50px 0 130px;
+        width: 275px;
+    }
+
+    .footer-logo {
+        margin: 0;
+        width: 100px;
+    }
+
+    .footer_made-by {
+        width: 130px;
+        // margin-left: 20px;
+    }
+
+    .footer-info {
+        position: absolute;
+        right: 25%;
+        top: 100px;
+    }
+
+    .footer-copyright {
+        display: flex;
+        justify-content: center;
+    }
 }

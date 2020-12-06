@@ -33,9 +33,32 @@ a {
     display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1440px) { 
+    .logo {
+        width: 200px;
+    }
+
+    .check-btn {
+        width: 130px;
+    }
+
+    .header_btn {
+        width: 140px;
+        height: 35px;
+        font-weight: 600;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 1024px) {
     .header {
-        max-width: 375px;
+        padding: 0 100px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+    .header {
+        // max-width: 375px;
         height: auto;
         padding: 0;
         padding-bottom: 20px;

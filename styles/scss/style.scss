@@ -24,8 +24,8 @@ body {
     font-size: 20px;
     line-height: 24px;
     margin: 16px auto;
-
 }
+
 
 @media (max-width:375px) {
     .li {
@@ -104,3 +104,59 @@ a {
 }
 
 .show {display:block;}
+
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 3em!important;
+    }
+
+    h2 {
+        font-size: 1em!important;
+    }
+
+    h3 {
+        font-size: 1em!important;
+    }
+
+    p {
+        font-size: 0.9em!important;
+    }
+
+    span {
+        font-size: 1em!important;
+    }
+
+    li {
+        font-size: 1em!important;
+    }
+}
+
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 2.5em!important;
+    }
+
+    h2 {
+        font-size: 1em!important;
+    }
+
+    h3 {
+        font-size: 1em!important;
+    }
+
+    p {
+        font-size: 0.8em!important;
+    }
+
+    span {
+        font-size: 1em!important;
+    }
+
+    li {
+        font-size: 0.8em!important;
+    }
+
+    a {
+        font-size: 0.8em!important;
+    }
+}

@@ -1,7 +1,6 @@
 .main-block {
     display: flex;
     padding: 0 247px;
-    height: 750px;
 }
 
 .main-block_info {
@@ -16,7 +15,8 @@
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
-    font-size: 50px;
+    // font-size: 50px;
+    font-size: 3rem;
     line-height: 61px;
 }
 
@@ -25,15 +25,117 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    max-width: 80%;
 }
 
 .main-block_image-container {
-    right: 150px;
+    right: 300px;
     position: absolute;
 }
 
 .main-block_get-inspired {
     display: none;
+}
+
+@media (max-width: 1920) {
+    .main-block_image-container {
+        img {
+            // width: 333.61px;
+            // height: 270.2px;
+            // display: block;
+            display: none;
+        }
+    }
+}
+
+// @media (max-width: 1750px) {
+//     .title {
+//         font-size: 2px;
+//     }
+// }
+
+@media (max-width: 1600px) {
+    .main-block_image-container {
+        top: 100px;
+        right: 200px;
+
+        img {
+            max-width: 600px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .main-block_image-container {
+        top: 150px;
+        img {
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-block {
+        display: flex;
+        flex-direction: column;
+        padding: 0 100px;
+        height: 700px;
+    }
+
+    .main-block_image-container {
+        right: 225px;
+        img {
+            width: 700px;
+        }
+    }
+
+    .main-block_info {
+        position: absolute;
+        top: 650px;
+        display: flex;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.7em!important;
+    }
+
+    .main-block_subtitle {
+        // max-width: 100%;
+    }
+
+    .main-block_abous-us {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .li {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-block_image-container {
+        right: 50px;
+        img {
+            width: 600px;
+        }
+    }
+
+    .main-block {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.7em!important;
+        max-width: 80%;
+    }
+
+    .main-block_abous-us {
+        margin-left: 100px;
+        width: 80%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -60,6 +162,7 @@
 
     .main-block_info {
         position: absolute;
+        max-width: 375px;
         top: 320px;
     }
 
@@ -96,6 +199,11 @@
     }
 
     .main-block_abous-us {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        margin-left: 20px;
+
         li {
             font-weight: 600;
             font-size: 14px;
@@ -103,3 +211,4 @@
         }
     }
 }
+

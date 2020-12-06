@@ -15,3 +15,21 @@ window.onclick = function(event) {
         }
     }
 }
+
+const scheme = document.getElementById('schemeImg');
+console.log(scheme);
+
+if(screen.width <= '768') {
+    scheme.src='assets/scheme-mobile.svg'
+    console.log('done');  
+} else {}
+
+
+const reload = () => {
+    if(screen.width <= '768') {
+        scheme.src='assets/scheme-mobile.svg'
+        console.log('done');  
+    }else {}
+    // location.reload()
+
+}

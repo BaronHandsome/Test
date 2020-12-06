@@ -20,10 +20,9 @@
     position: absolute;
     width: 1225px;
     height: 335px;
-    left: calc(50% - 1225px/2 + 2.5px);
-    top: calc(50% - 335px/2);
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
+    position: absolute;
 }
 
 .benefits-block_title {
@@ -91,3 +90,112 @@
         // line-height: 130.9%;
     }
 }
+
+@media (max-width: 1600px) {
+    .benefits-block_title {
+        font-size: 2em!important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .benefits-block_border {
+        width: 700px;
+        height: 400px;
+        left: 25%;
+    }
+
+    .benefits-block_img-container {
+        left: 21%;
+
+        * {
+            width: 800px;
+            height: 200px;
+        }
+
+        .benefits-bg2 {
+            width: 800px;
+        }
+    }
+
+    .benefits {
+        width: 500px;
+        top: 190px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .benefits-block_border {
+        width: 600px;
+        height: 400px;
+        left: 20%;
+    }
+
+    .benefits-block_img-container {
+        left: 10%;
+
+        * {
+            width: 800px;
+            height: 200px;
+        }
+
+        .benefits-bg2 {
+            width: 800px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-block_border {
+        width: 450px;
+        height: 400px;
+        left: 22%;
+    }
+
+    .benefits-block_img-container {
+        left: 12%;
+        width: 100%;
+
+        * {
+            max-width: 80%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .benefits-container {
+        height: 456px;
+    }
+
+    .benefits-block_border {
+        width: 80%;
+        height: 320px;
+        left: 10%;
+    }
+
+    .benefits-block_title {
+        font-size: 1.5em!important;
+    }
+
+    .benefits-block_img-container {
+        left: 3%;
+        bottom: 250px;
+
+            * {
+                min-width: 333px;
+            }
+    }
+
+    .benefits {
+        width: 250px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            width: auto;
+        }
+    }
+}
+
