@@ -1,10 +1,9 @@
-
-function dropDown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function dropDownBurger() {
-    document.getElementById("nav").classList.toggle("show-flex");
+function openDropDown(id) {
+    if(id == 'myDropdown') {
+        document.getElementById(id).classList.toggle("show");
+    } else {
+        document.getElementById("nav").classList.toggle("show-flex");
+    }
 }
 
 window.onclick = function(event) {
