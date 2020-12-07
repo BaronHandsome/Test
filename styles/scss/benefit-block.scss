@@ -19,10 +19,9 @@
 .benefits-block_border {
     position: absolute;
     width: 1225px;
-    height: 335px;
+    height: 345px;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
-    position: absolute;
 }
 
 .benefits-block_title {
@@ -33,6 +32,7 @@
     line-height: 43px;
     text-transform: uppercase;
     color: white;
+    margin: 50px 0;
 
     span {
         color: #E77C1A;
@@ -51,18 +51,19 @@
     }
 }
 
-.benefits-bg2 {
-    opacity: 0.1;
+.benefits-bg1 {
+    opacity: 1;
+    z-index: 1;
 }
 
 .benefits {
     display: flex;
-    z-index: 1;
     width: 800px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     top: 160px;
+    z-index: 2;
 
     h3 {
         width: 380px;
